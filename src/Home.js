@@ -1,12 +1,13 @@
 import React from 'react';
-import './Home.css';
+import { useNavigate } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
-  const recentQuotes = [
-    { brand: 'Toyota', model: 'Corolla', year: 2018, price: '$15,000 - $17,000' },
-    { brand: 'Ford', model: 'F-150', year: 2020, price: '$25,000 - $28,000' },
-    { brand: 'Honda', model: 'Civic', year: 2019, price: '$18,000 - $20,000' }
-  ];
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/quote');  // Navigate to the QuoteForm page
+  };
 
   return (
     <div className="home-container">
@@ -21,20 +22,11 @@ const Home = () => {
       <section className="hero-section">
         <h2>Get a Quote for Your Car Today!</h2>
         <p>Enter your car details and receive an accurate price range estimate.</p>
-        <button onClick={() => window.location.href = '/quote'}>Get Started</button>
+        <Button onClick={handleGetStarted}>Get Started</Button>
       </section>
 
       <section className="recent-quotes">
-        <h3>Recently Quoted Cars</h3>
-        <div className="quotes-list">
-          {recentQuotes.map((quote, index) => (
-            <div key={index} className="quote-card">
-              <h4>{quote.brand} {quote.model}</h4>
-              <p>Year: {quote.year}</p>
-              <p>Price Range: {quote.price}</p>
-            </div>
-          ))}
-        </div>
+        {/* Your recently quoted cars */}
       </section>
 
       <footer>

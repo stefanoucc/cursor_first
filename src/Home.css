@@ -1,0 +1,79 @@
+.home-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .recent-quotes {
+    padding: 30px 20px;
+    background-color: white;
+  }
+  
+  .recent-quotes h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quotes-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .quote-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .quote-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
